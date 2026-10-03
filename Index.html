@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>For My Favourite Person ❤️</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            color: white;
+            text-align: center;
+        }
+
+        .page {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content {
+            padding: 25px;
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .heart {
+            font-size: 60px;
+            animation: beat 1s infinite;
+        }
+
+        button {
+            padding: 15px 28px;
+            border: none;
+            border-radius: 30px;
+            background: white;
+            color: #ff4f81;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        .section {
+            display: none;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.20);
+            padding: 25px;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+
+        @keyframes beat {
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+<!-- HOME PAGE -->
+
+<div class="page" id="home">
+
+    <div class="content">
+
+        <div class="heart">❤️</div>
+
+        <h1>For My Favourite Person</h1>
+
+        <p>
+            You are not just someone special...<br>
+            You are my favourite person. 🫶
+        </p>
+
+        <button onclick="showStory()">
+            Open My Heart 💌
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- OUR STORY -->
+
+<div class="section" id="story">
+
+    <div class="content">
+
+        <h2>Our Little Story 💌</h2>
+
+        <div class="card">
+
+            <p>
+                Before we became “us”, we were best friends. ❤️
+            </p>
+
+            <p>
+                For almost 3 years, we shared a beautiful
+                friendship. We both had our own lives,
+                our own relationships and our own stories.
+                But somehow, our friendship always stayed special. 🫶
+            </p>
+
+            <p>
+                Whenever life became difficult for me,
+                you were always there.
+                You listened to me, supported me and
+                stayed by my side when I needed someone
+                the most. 🥹
+            </p>
+
+            <p>
+                Slowly, I realized that the person who had
+                always been there for me had become much
+                more important than I had ever imagined. ❤️
+            </p>
+
+            <p>
+                And then our friendship turned into
+                something even more special.
+            </p>
+
+            <p>
+                Today, it has been <b>1 year and 5 months</b>
+                since we became a couple. 💕
+            </p>
+
+            <p>
+                From being best friends for 3 years to
+                becoming partners, our journey has been
+                full of memories, laughter and support.
+            </p>
+
+            <h2>
+                3 Years of Friendship + 1 Year 5 Months of Us ❤️
+            </h2>
+
+            <p>
+                And this is just another chapter
+                of our story... ✨
+            </p>
+
+        </div>
+
+        <button onclick="showSpecial()">
+            Continue ❤️
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- WHY SPECIAL -->
+
+<div class="section" id="special">
+
+    <div class="content">
+
+        <h2>Why You Are Special To Me? ❤️</h2>
+
+        <div class="card">
+
+            <p>💗 You always stayed by my side.</p>
+
+            <p>🫶 You understand me even when I don't say much.</p>
+
+            <p>🥹 You were there for me during my difficult days.</p>
+
+            <p>😂 You know how to make me smile.</p>
+
+            <p>
+                🤍 You are not only my boyfriend,
+                you were my best friend first.
+            </p>
+
+            <p>✨ You are a very special part of my life.</p>
+
+            <p>❤️ And most importantly, you are YOU.</p>
+
+        </div>
+
+        <button onclick="showMessage()">
+            One More Thing 💌
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- MESSAGE -->
+
+<div class="section" id="message">
+
+    <div class="content">
+
+        <h2>A Message For You 💌</h2>
+
+        <div class="card">
+
+            <p>
+                I don't know what the future will bring,
+                but I know that I will always be grateful
+                for the beautiful journey we have shared. ❤️
+            </p>
+
+            <p>
+                Thank you for being my best friend,
+                my support and such a special person
+                in my life. 🫶
+            </p>
+
+            <p>
+                From 3 years of friendship to 1 year
+                and 5 months of us... 🥹❤️
+            </p>
+
+            <h2>
+                I am really happy that it became “US”. 💕
+            </h2>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+function hideAll() {
+
+    document.getElementById("home").style.display = "none";
+
+    document.getElementById("story").style.display = "none";
+
+    document.getElementById("special").style.display = "none";
+
+    document.getElementById("message").style.display = "none";
+
+}
+
+
+function showStory() {
+
+    hideAll();
+
+    document.getElementById("story").style.display = "flex";
+
+}
+
+
+function showSpecial() {
+
+    hideAll();
+
+    document.getElementById("special").style.display = "flex";
+
+}
+
+
+function showMessage() {
+
+    hideAll();
+
+    document.getElementById("message").style.display = "flex";
+
+}
+
+</script>
+
+
+</body>
+</html>
